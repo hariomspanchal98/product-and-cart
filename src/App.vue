@@ -17,14 +17,9 @@
       <span>Cart ({{totalQuantity}})</span>
     </div>
   </header>
-  <router-view :inventory="inventory" :addToCart="addToCart"/>
+  <router-view :inventory="inventory" :addToCart="addToCart" />
 
-  <sidebar
-    v-if="showSidebar"
-    :toggle="toggleSidebar"
-    :cart="cart"
-    :inventory="inventory"
-    :remove="removeItem" />
+  <sidebar v-if="showSidebar" :toggle="toggleSidebar" :cart="cart" :inventory="inventory" :remove="removeItem" />
 </template>
 
 <script>
